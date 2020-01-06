@@ -1,12 +1,20 @@
 {
   "name": "jsTraining",
   "version": "1.0.0",
-  "description": "",
+  "description": "Adicionar scripts iniciais de treinos Javascript",
   "main": "ArrowFunction.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechWilli/javascript-training.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TechWilli/javascript-training/issues"
+  },
+  "homepage": "https://github.com/TechWilli/javascript-training#readme"
 }
