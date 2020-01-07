@@ -47,3 +47,12 @@ console.log(aprovados);
 aprovados.forEach((aprovado) => {
     console.log(`${aprovado.aluno} foi aprovado/a`);
 });
+
+// REDUCE - realiza operações com os elementos do array entre sí;
+const numeros = [1, 2, 3, 4, 5];
+
+const result = numeros.reduce((total, next) => {
+    return total * next;
+});
+
+console.log('resultado = ' + result);
