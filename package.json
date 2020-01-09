@@ -4,7 +4,8 @@
   "description": "Adicionar scripts iniciais de treinos Javascript",
   "main": "ArrowFunction.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devstart": ".\\node_modules\\.bin\\nodemon"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/TechWilli/javascript-training/issues"
   },
-  "homepage": "https://github.com/TechWilli/javascript-training#readme"
+  "homepage": "https://github.com/TechWilli/javascript-training#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
