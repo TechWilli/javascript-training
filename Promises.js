@@ -23,8 +23,16 @@ const assistirTutorial = () => {
     let saiuDoVideo = false;
     let assistindoMemes = false;
 
+    if(Math.random().toFixed(2) > 0.70) {
+        saiuDoVideo = true
+    } else if(Math.random().toFixed(2) > 0.50) {
+        assistindoMemes = true
+    } else {
+        [saiuDoVideo, assistindoMemes] = [false, false];
+    }
+    console.log(saiuDoVideo, assistindoMemes);
     return new Promise((resolve, reject) => {
-        if(saiuDoVideo) {
+        if (saiuDoVideo) {
             reject({
                 status: 'Usuario ausente',
                 mensagem: 'Que pena :(',
@@ -33,6 +41,11 @@ const assistirTutorial = () => {
             reject({
                 status: 'Usuario vendo memes',
                 mensagem: 'Pelo visto, memes são mais importantes que tutoriais :/'
+            });
+        } else if (saiuDoVideo && assistindoMemes) {
+            reject({
+                status: 'Usuario fora vendo memes',
+                mensagem: 'Pior dos mundos'
             });
         } else {
             resolve('Aproveite o tutorial e aprenda muito!!!');
