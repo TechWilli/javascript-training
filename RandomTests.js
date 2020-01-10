@@ -33,3 +33,8 @@ console.log(banco.saldo);
 
 // // forma ideal de resolver tudo
 // console.log(`5 - Saldo depois do aumento: ${banco.saldo + 2000}`);
+
+const names = ['Will', 'Amanda', 'Melissa', 'Nick'];
+index = Math.floor(Math.random() * names.length);
+
+console.log(names[index]);
